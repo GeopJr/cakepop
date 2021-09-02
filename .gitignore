@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+.pnpm-debug.log*
+*.log
+npm-debug.log*
+.AppleDouble
+.LSOverride
+.idea
+.cloud
+.project
+tmp/
+typings/
+pnpm-lock.yaml
+nnpm-lock.yaml
+yarn-lock.yaml
