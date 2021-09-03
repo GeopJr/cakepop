@@ -2,25 +2,35 @@ name: Manually re-build
 on: workflow_dispatch
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-18.04
+    env:
+      npm_execpath: pnpm
     steps:
       - uses: actions/checkout@v2
       - uses: pnpm/action-setup@v2
         with:
-          version: 6.13.0
+          version: 6.14.5
       - uses: actions/setup-node@v2
         with:
-          node-version: '16.6.2'
-          cache: 'pnpm'
+          node-version: '16.8.0'
       - name: Build
         run: |
-          npx create-sveltepress-app create ./ --theme=GeopJr/cakepop
-          pnpm i
-          pnpm run build
+          npx create-sveltepress-app create ./tempsp
+          cd tempsp
+          npx create-sveltepress-app add --theme=GeopJr/cakepop
+          git init
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add -f .
+          pnpm i --ignore-scripts --no-frozen-lockfile
+          node prepareTheme.js
+          git add .
           git commit -am "Bonk"
-          git push https://github.com/GeopJr/cakepop HEAD:gh-pages -f
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "gh-pages"
+          force: true
+          directory: "./tempsp/"
   
