@@ -11,5 +11,5 @@ npm-debug.log*
 tmp/
 typings/
 pnpm-lock.yaml
-nnpm-lock.yaml
-yarn-lock.yaml
+package-lock.yaml
+yarn.lock
