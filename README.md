@@ -1,5 +1,3 @@
-# This doesn't work yet, wait until the new theming API is done.
-
 <p align="center">
   <img width="758" alt="cakepop screenshot of a random post on sveltepress" src="https://i.imgur.com/fujKsjT.png">
 </p>
@@ -24,9 +22,9 @@ cakepop is a theme for [SveltePress](https://github.com/GeopJr/SveltePress), a d
 ```bash
 # Using csa
 ## Creating a new project with the theme
-npx create-sveltepress-app my-cakepop-project --theme=GeopJr/cakepop
+npx create-sveltepress-app create my-cakepop-project --theme=GeopJr/cakepop
 ## Adding to an existing theme (assumes root of project)
-npx create-sveltepress-app --add-theme=GeopJr/cakepop
+npx create-sveltepress-app add --theme=GeopJr/cakepop
 
 # You will need to run the install script again
 # if you've done that already
@@ -38,7 +36,7 @@ pnpm install
 
 ## Warning
 
-Windi takes a while to compile this theme, so please wait until your page loads (in dev mode).
+Windi might take a while to compile this theme, so please wait until your page loads (in dev mode).
 
 #
 
