@@ -16,11 +16,6 @@
 
 	let currentYear = new Date().getFullYear();
 
-	// Might be used for more in the future
-	const breakpoints = {
-		sm: 8
-	};
-
 	// Typewriter
 	let people = ['humans', 'you', 'your relatives', 'everyone'];
 
@@ -123,75 +118,55 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex h-full w-full flex-col justify-center items-center p-8">
-		<div class="card h-100 lg:card-side w-9/12">
-			<figure>
-				<div class="relative">
-					<div class="absolute">
-						<img
-							alt="a terminal showing the output of the tree command, output includes a file structure of markdown files"
-							src="https://i.imgur.com/JicfVWS.png"
-						/>
-					</div>
-					<div class="absolute inset-x-25 inset-y-20">
-						<img
-							alt="SveltePress sidebar generated using the previous structure"
-							src="https://i.imgur.com/Eiy8q4i.png"
-						/>
-					</div>
-				</div>
-			</figure>
-			<div class="card-body justify-center p-0">
-				<div class="card shadow-2xl m-4 mb-8 bg-primary">
-					<div class="card-body bg-">
-						<h2 class="card-title">Filesystem based Structure</h2>
-						<p>Folders become categories, files become posts. Simple as that.</p>
-					</div>
+	<div class="flex h-full w-full flex-col justify-between p-8">
+		<div class="flex flex-col md:flex-row justify-around my-4">
+			<div class="max-w-full flex justify-center flex-0">
+				<img
+					class="max-w-full"
+					alt="a terminal showing the output of the tree command, output includes a file structure of markdown files and SveltePress sidebar generated using the previous structure"
+					src="https://i.imgur.com/KidDqUy.png"
+				/>
+			</div>
+			<div class="self-center card shadow-2xl bg-primary flex justify-center m-4 max-w-150">
+				<div class="card-body">
+					<h2 class="card-title">Filesystem based Structure</h2>
+					<p>Folders become categories, files become posts. Simple as that.</p>
 				</div>
 			</div>
 		</div>
-		<div class="mt-16 card h-100 lg:card-side w-full lg:flex-row-reverse  max-w-9/12">
-			<figure>
-				<div class="relative">
-					<div class="absolute">
-						<img alt="the default carbon design theme" src="https://i.imgur.com/fujKsjT.png" />
-					</div>
-					<div class="absolute inset-y-20">
-						<img alt="the cakepop official theme" src="https://i.imgur.com/3SnyABs.png" />
-					</div>
-				</div>
-			</figure>
-			<div class="card-body justify-center p-0">
-				<div class="card shadow-2xl m-4 mb-8 bg-secondary text-black">
-					<div class="card-body">
-						<h2 class="card-title">Themable</h2>
-						<p>
-							With a theming API with almost zero restrictions, you can modify everything to fit
-							your needs.
-						</p>
-					</div>
+		<div class="flex flex-col-reverse md:flex-row justify-around my-4">
+			<div class="self-center card shadow-2xl m-4 mb-8 bg-primary m-4 max-w-150">
+				<div class="card-body">
+					<h2 class="card-title">Themable</h2>
+					<p>
+						With a theming API with almost zero restrictions, you can modify everything to fit your
+						needs.
+					</p>
 				</div>
 			</div>
+			<div class="max-w-3xl flex justify-center flex-0">
+				<img
+					class="max-w-full"
+					alt="the cakepop official theme in front of the carbon one"
+					src="https://i.imgur.com/SG5iPrc.png"
+				/>
+			</div>
 		</div>
-		<div class="mt-16 card h-100 lg:card-side w-full  max-w-9/12">
-			<figure>
-				<div class="absolute">
-					<img
-						alt="a screenshot of the mobile app with the sidebar open"
-						src="https://i.imgur.com/rPtlRMH.png"
-					/>
-				</div>
-			</figure>
-			<div class="card-body justify-center p-0">
-				<div class="card shadow-2xl m-4 mb-8 bg-primary">
-					<div class="card-body">
-						<h2 class="card-title">Compile to native</h2>
-						<p>
-							Desktop, Mobile, e-books & more. With the power of Flutter, GTK, QT & Pandoc you can
-							target Web, Linux, MacOS, Windows, Andoird, iOS, .epub, .pdf, .docx & a whole lot more
-							from one codebase.
-						</p>
-					</div>
+		<div class="flex flex-col md:flex-row justify-around my-4">
+			<div class="max-w-3xl flex justify-center m-4">
+				<img
+					alt="screenshots of multiple guis of sveltepress (gtk, qt, flutter (desktop &amp; mobile)"
+					src="https://i.imgur.com/YCuLvMP.png"
+				/>
+			</div>
+			<div class="self-center card shadow-2xl m-4 mb-8 bg-primary m-4 max-w-150">
+				<div class="card-body">
+					<h2 class="card-title">Compile to native</h2>
+					<p>
+						Desktop, Mobile, e-books &amp; more. With the power of Flutter, GTK, QT &amp; Pandoc you can
+						target Web, Linux, MacOS, Windows, Andoird, iOS, .epub, .pdf, .docx &amp; a whole lot more
+						from one codebase.
+					</p>
 				</div>
 			</div>
 		</div>
