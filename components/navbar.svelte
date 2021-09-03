@@ -98,6 +98,7 @@
                   href={navItem.link}
                   target={isExternal(navItem.link) ? "_blank" : undefined}
                   rel={isExternal(navItem.link) ? "noopener" : undefined}
+                  sveltekit:prefetch={!isExternal(navItem.link) ? true : null}
                 >
                   {navItem.name}
                 </a>
@@ -112,6 +113,7 @@
             href={navItem.link}
             target={isExternal(navItem.link) ? "_blank" : undefined}
             rel={isExternal(navItem.link) ? "noopener" : undefined}
+            sveltekit:prefetch={!isExternal(navItem.link) ? true : null}
           >
             {navItem.name}
           </a>
@@ -172,7 +174,7 @@
               href={navItem.link}
               target={isExternal(navItem.link) ? "_blank" : undefined}
               rel={isExternal(navItem.link) ? "noopener" : undefined}
-              sveltekit:prefetch={!isExternal(navItem.link)}
+              sveltekit:prefetch={!isExternal(navItem.link) ? true : null}
             >
               {navItem.name}
             </a>
