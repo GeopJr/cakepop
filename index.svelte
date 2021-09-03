@@ -135,7 +135,7 @@
 			</div>
 		</div>
 		<div class="flex flex-col-reverse md:flex-row justify-around my-4">
-			<div class="self-center card shadow-2xl m-4 mb-8 bg-primary m-4 max-w-150">
+			<div class="self-center card shadow-2xl m-4 mb-8 bg-secondary text-black m-4 max-w-150">
 				<div class="card-body">
 					<h2 class="card-title">Themable</h2>
 					<p>
