@@ -4,8 +4,8 @@
   "type": "module",
   "devDependencies": {
     "carbon-icons-svelte": "10.36.0",
-    "daisyui": "^1.14.0",
+    "daisyui": "1.14.0",
 		"svelte-typewriter": "2.4.5",
-    "vite-plugin-windicss": "^1.3.0"
+    "vite-plugin-windicss": "1.4.3"
   }
 }
