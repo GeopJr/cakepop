@@ -5,7 +5,7 @@ import WindiCSS from "vite-plugin-windicss";
 export const config = {
   kit: {
     vite: () => ({
-      plugins: [WindiCSS.default()],
+      plugins: [WindiCSS()],
     }),
   },
   preprocess: [
