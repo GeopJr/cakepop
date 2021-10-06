@@ -5,11 +5,6 @@
 
   export let isSideNavOpen;
   export let groupMap;
-
-  // SideNavLinks and SideNavMenuItems
-  // should have on:click={() => (isSideNavOpen = false)}
-  // but only on `md` else desktop wont be able to reopen
-  // the sidebar
 </script>
 
 <div
@@ -19,7 +14,7 @@
   on:click={() => (isSideNavOpen = false)}
 />
 <nav
-  class={`z-10 transition duration-150 ease-in-out transform  lg:translate-x-0 lg:visible fixed left-0 h-full sidebar motion-reduce:transition-none motion-reduce:transform-none ${
+  class={`sp--sidebar z-10 transition duration-150 ease-in-out transform  lg:translate-x-0 lg:visible fixed left-0 h-full sidebar motion-reduce:transition-none motion-reduce:transform-none ${
     isSideNavOpen ? "rounded-l-none visible translate-x-0" : "-translate-x-full"
   }`}
 >

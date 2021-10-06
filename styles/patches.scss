@@ -66,3 +66,9 @@ body {
 :root[data-theme='g100'] .sp--search {
 	background-color: hsla(var(--nf) / var(--tw-bg-opacity, 1));
 }
+
+.sp--sidebar ~ .sp--content-parent {
+	@media only screen and (min-width: 1056px) {
+		margin-left: 20.5rem;
+	}
+}

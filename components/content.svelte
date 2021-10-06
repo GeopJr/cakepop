@@ -5,7 +5,9 @@
   export let pagination = {};
 </script>
 
-<div class="mb-2 z-0 card shadow-2xl bg-base-100 text-base-content lg:ml-82">
+<div
+  class="sp--content-parent mb-2 z-0 card shadow-2xl bg-base-100 text-base-content"
+>
   <div class="card-body sp--content">
     <slot />
   </div>
