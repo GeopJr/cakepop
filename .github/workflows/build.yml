@@ -25,7 +25,7 @@ jobs:
           # ci doesn't like the install script
           # so instead do the tasks manually (for now)
           pnpm i --ignore-scripts --no-frozen-lockfile
-          node prepareTheme.js
+          node scripts/prepareTheme.js
           git add .
           git commit -am "Bonk"
       - name: Push changes
