@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "devDependencies": {
-    "carbon-icons-svelte": "10.44.3",
+    "carbon-icons-svelte": "10.44.4",
     "daisyui": "1.24.3",
 		"svelte-typewriter": "2.4.5",
     "vite-plugin-windicss": "1.6.3"
