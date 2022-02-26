@@ -6,6 +6,6 @@
     "carbon-icons-svelte": "10.44.4",
     "daisyui": "2.2.2",
 		"svelte-typewriter": "2.4.5",
-    "vite-plugin-windicss": "1.7.1"
+    "vite-plugin-windicss": "1.8.1"
   }
 }
